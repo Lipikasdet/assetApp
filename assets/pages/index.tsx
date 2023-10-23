@@ -2,14 +2,7 @@ import axios from "axios";
 export default function Home(props:any) {
   console.log(props)
   return (
-     <div>Hello {props.name} </div>
+     <div>Hello </div>
   )
 }
-export async function getServerSideProps(){
-  const response= await axios.get('https://asset-app-vdda.vercel.app/api/hello');
-  const data=response.data.name;
-  console.log(data,'00000')
-  return {
-    props:{name:data}
-  }
-}
+
