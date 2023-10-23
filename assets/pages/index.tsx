@@ -6,7 +6,7 @@ export default function Home(props:any) {
   )
 }
 export async function getServerSideProps(){
-  const response= await axios.get('http://localhost:3000/api/hello');
+  const response= await axios.get('https://asset-app-z7h4.vercel.app/api/hello');
   const data=response.data.name;
   console.log(data,'00000')
   return {
